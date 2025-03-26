@@ -3,10 +3,10 @@ package entities;
 import models.User;
 
 public class Student extends User {
-    private double grade;
+    private final double grade;
 
-    public Student(String name, String institute, int number, double grade) {
-        super(name, institute, number);
+    public Student(String name, String email, String institute, int number, double grade) {
+        super(name, email, institute, number);
         this.grade = grade;
     }
 

@@ -3,10 +3,10 @@ package entities;
 import models.User;
 
 public class Professor extends User {
-    private boolean isWorking;
+    private final boolean isWorking;
 
-    public Professor(String name, String institute, int number, boolean isWorking) {
-        super(name, institute, number);
+    public Professor(String name, String email, String institute, int number, boolean isWorking) {
+        super(name, email, institute, number);
         this.isWorking = isWorking;
     }
 

@@ -2,11 +2,13 @@ package models;
 
 public class User extends Person {
     protected String name;
+    protected String email;
     protected String institute;
     protected int number;
 
-    public User(String name, String institute, int number) {
+    public User(String name, String email, String institute, int number) {
         this.name = name;
+        this.email = email;
         this.institute = institute;
         this.number = number;
     }
@@ -15,6 +17,8 @@ public class User extends Person {
     public String get_name() {
         return this.name;
     }
+
+    public String get_email() { return this.email; }
 
     protected int get_number() {
         return this.number;
