@@ -21,7 +21,7 @@ public class DataManager {
         System.out.println("Professor added\n");
     }
 
-    public void get_student_by_email(int number) {
+    public void get_student_by_number(int number) {
         for (Student st : students) {
             if (st.get_number() == number) {
                 System.out.println("Name: " + st.get_name() + "\n Email: " + st.get_email() + "\n Institute: " + st.get_institute());
@@ -35,7 +35,7 @@ public class DataManager {
         }
     }
 
-    public void get_professor_by_email(int number) {
+    public void get_professor_by_number(int number) {
         for (Professor pf : professors) {
             if (pf.get_number() == number) {
                 System.out.println("Name: " + pf.get_name() + "\n Email: " + pf.get_email() + "\n Institute: " + pf.get_institute());
