@@ -20,11 +20,11 @@ public class User extends Person {
 
     public String get_email() { return this.email; }
 
-    protected int get_number() {
+    public int get_number() {
         return this.number;
     }
 
-    protected String get_institute() {
+    public String get_institute() {
         return this.institute;
     }
 }

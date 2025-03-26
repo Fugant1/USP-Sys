@@ -20,4 +20,32 @@ public class DataManager {
         professors.add(pf);
         System.out.println("Professor added\n");
     }
+
+    public void get_student_by_email(int number) {
+        for (Student st : students) {
+            if (st.get_number() == number) {
+                System.out.println("Name: " + st.get_name() + "\n Email: " + st.get_email() + "\n Institute: " + st.get_institute());
+                if(st.isapproved()) {
+                    System.out.println("\n Approved\n");
+                    break;
+                }
+                System.out.println("Not Approved\n");
+                break;
+            }
+        }
+    }
+
+    public void get_professor_by_email(int number) {
+        for (Professor pf : professors) {
+            if (pf.get_number() == number) {
+                System.out.println("Name: " + pf.get_name() + "\n Email: " + pf.get_email() + "\n Institute: " + pf.get_institute());
+                if(pf.isprofessorON()) {
+                    System.out.println("\nThis professor is Working nowadays\n");
+                    break;
+                }
+                System.out.println("This professor is not currently Working at this institute\n");
+                break;
+            }
+        }
+    }
 }
