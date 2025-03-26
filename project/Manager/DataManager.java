@@ -49,7 +49,7 @@ public class DataManager {
 
     public void list_professors_per_institute(String institute) {
         if (professors.isEmpty()) {
-            System.out.println("No professors found\n");
+            System.out.println("No professors found");
             return;
         }
 
@@ -63,7 +63,7 @@ public class DataManager {
             }
         }
         if (flag == 0) {
-            System.out.println("No professors found\n");
+            System.out.println("No professors found");
         }
     }
 }
